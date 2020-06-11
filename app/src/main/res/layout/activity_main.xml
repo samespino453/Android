@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblNum1"
+        android:layout_width="99dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="313dp"
+        android:layout_marginRight="355dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toStartOf="@+id/inputNum1"
+        android:layout_toLeftOf="@+id/inputNum1"
+        android:background="#DDDDDDDD"
+        android:padding="10dp"
+        android:text="Bill($)"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/inputNum1"
+        android:layout_width="251dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-290dp"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@id/inputNum2"
+        android:ems="10"
+        android:hint="Enter Bill"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#3F51B5"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/lblNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblNum1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="#DDDDDDDD"
+        android:padding="10dp"
+        android:shadowColor="#DDDDDDDD"
+        android:text="Tip(%)"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/inputNum2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/lblNum2"
+        android:layout_alignBottom="@id/lblNum2"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="-270dp"
+        android:layout_marginBottom="1dp"
+        android:hint="Enter tip %"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#3F51B5"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/lblNum3"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblNum2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="#DDDDDDDD"
+        android:padding="10dp"
+        android:shadowColor="#DDDDDDDD"
+        android:text="Tip ($)"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/lblMsg"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:layout_above="@+id/lblMsg2"
+        android:layout_below="@id/lblNum2"
+        android:layout_marginLeft="-7dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/lblNum2"
+        android:background="#4CAF50"
+        android:minWidth="200dp"
+        android:padding="10dp"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/lblNum4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblNum3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="#DDDDDDDD"
+        android:padding="10dp"
+        android:shadowColor="#DDDDDDDD"
+        android:text="Total ($)"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/lblMsg2"
+        android:layout_width="300dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/lblNum3"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/lblNum4"
+        android:background="#4CAF50"
+        android:minWidth="200dp"
+        android:padding="10dp"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblNum4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:background="#4CAF50"
+        android:onClick="Cal"
+        android:text="CALCULATE"
+        android:textSize="24sp" />
+</RelativeLayout>
